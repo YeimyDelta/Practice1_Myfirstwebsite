@@ -13,30 +13,79 @@
 
     <!-- STYLESHEET -->
     <link rel="stylesheet" href="styles.css">
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 </head>
 <body>
     <!-- Sección de encabezado del sitio -->
+
     <header>
-        <h1>YEIMY DELTA GIVES YOU THE WELCOME TO MY PORTFOLIO!</h1>
-        <p>Digital Designer<p>
+        <h1 class="animate__animated animate__rubberBand">WELCOME TO MY PORTFOLIO!</h1>
+        <p>By: YEIMY DELTA Digital Designer<p>
     </header>
     <!-- Barra de navegación con enlaces -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Aboutme.html">About me</a></li>
-            <li><a href="#">Contact</a></li>
+
+            <li><a href="Contact.html">Contact</a>
+            <ul>
+                <li><a href="https://www.instagram.com/yei_andru?igsh=MTJtbzNpcDE5ZXFiaQ==">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@yeiandru0?_t=8oiJcSsJDpl&_r=1">TikTok</a></li>
+            </ul>
+        </li>
         </ul>
     </nav>
     <!-- Contenido principal de la página -->
     <main>
         <section>
             <h2>Acerca de este sitio</h2>
-            <p>Este es un sitio web de ejemplo para aprender HTML y CSS.</p>
+            <p>Este es un sitio web de ejemplo para aprender HTML y CSS asu vez una ligera muestra de mi trabajo como artista que sigue en su camino de aprendizaje. Aqui algunos de mis trabajos:</p>
         </section>
-        <img src="Animate.png">
         <br> 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/BEwzyezot3s?si=61nPkCOri0j5eull" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <!-- Contenedor principal del slider -->
+<div class="slider-container">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img src="Y1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slider-item">
+                <img src="Y2.jpg" alt="Imagen 2">
+            </div>
+            <div class="slider-item">
+                <img src="Y3.jpg" alt="Imagen 3">
+            </div>
+     <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 3000); // Cambia la imagen cada 3 segundos
+        }
+    </script>
+
     </main>
     <!-- Pie de página del sitio -->
     <footer>

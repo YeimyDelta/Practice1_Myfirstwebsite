@@ -18,26 +18,84 @@
     <!-- Sección de encabezado del sitio -->
     <header>
         <h1>About the artist</h1>
-        <p>Welcome<p>
+        <p>Hey ¿quieres conocerme?<p>
     </header>
     <!-- Barra de navegación con enlaces -->
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="Aboutme.html">About me</a></li>
-            <li><a href="#">Contact</a></li>
+
+            <li><a href="Contact.html">Contact</a>
+            <ul>
+                <li><a href="https://www.instagram.com/yei_andru?igsh=MTJtbzNpcDE5ZXFiaQ==">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@yeiandru0?_t=8oiJcSsJDpl&_r=1">TikTok</a></li>
+            </ul>
+        </li>
         </ul>
     </nav>
     <!-- Contenido principal de la página -->
     <main>
+
+               <img src="Perfil.jpg">
         <section>
             <h2>About me</h2>
-            <p>Hey soy Yeimy De La Torre Arellano o por mi seudonimo  Yeimy Delta o Yei Andru, soy una artista Mexicana nacida el 19/12/2003 actualmente a la actualizacion de esta pagina tengo 20 añños, soy una entusiasta artista, una rara a los ojos de la sociedad y etiquetas, pero una bomba creativa para el mundo del arte. </p>
+            <p>Hey! soy Yeimy De La Torre Arellano o por mi seudonimo  Yeimy Delta o Yei Andru, soy una artista Mexicana nacida el 19/12/2003 actualmente a la actualizacion de esta pagina tengo 20 años, soy una entusiasta artista, una rara a los ojos de la sociedad, pero una bomba creativa para el mundo del arte.</p>
+
+             <p>Entre mis gustos estan todo tipo de arte, desde el dibujo, la musica y adoro crear historias divertidas o bizarras. Aqui algunos ejemplos:</p>
         </section>
-        <img src="Animate.png">
         <br> 
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/BEwzyezot3s?si=61nPkCOri0j5eull" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fmVR25DSi7Y?si=QbmQxcVSPehZ_QsY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+           <!-- Contenedor principal del slider -->
+<div class="slider-container">
+        <div class="slider-content">
+            <div class="slider-item">
+                <img src="quesito1.jpg" alt="Imagen 1">
+            </div>
+            <div class="slider-item">
+                <img src="quesito2.jpg" alt="Imagen 2">
+            </div>
+            <div class="slider-item">
+                <img src="quesito3.jpg" alt="Imagen 3">
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function plusSlides(n) {
+            slideIndex += n;
+            showSlides();
+        }
+
+        function showSlides() {
+            const slides = document.querySelectorAll(".slider-item");
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            slides.forEach((slide, index) => {
+                slide.style.display = index === slideIndex ? "block" : "none";
+            });
+            setTimeout(() => {
+                slideIndex++;
+                showSlides();
+            }, 3000); // Cambia la imagen cada 3 segundos
+        }
+    </script>
     </main>
+
+         <p>Cancion que va con mis vibras:</p>
+
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6N2MrP7JNFKJ3FLxwB4yc9?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
     <!-- Pie de página del sitio -->
     <footer>
         <p>&copy; 2024 My first website</p>
