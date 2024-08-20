@@ -29,9 +29,10 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Aboutme.html">About me</a></li>  
+            <li><a href="Aboutme.html">About me</a></li>
             <li><a href="Portafolio.html">Portafolio</a>
             <li><a href="Contact.html">Contact</a>
+            
             <ul>
                 <li><a href="https://www.instagram.com/yei_andru?igsh=MTJtbzNpcDE5ZXFiaQ==">Instagram</a></li>
                 <li><a href="https://www.tiktok.com/@yeiandru0?_t=8oiJcSsJDpl&_r=1">TikTok</a></li>
@@ -42,24 +43,39 @@
     <!-- Contenido principal de la página -->
     <main>
         <section>
-            <h2>Acerca de este sitio</h2>
-            <p>Este es un sitio web de ejemplo para aprender HTML y CSS asu vez una ligera muestra de mi trabajo como artista que sigue en su camino de aprendizaje. Aqui algunos de mis trabajos:</p>
+            <h2>Galeria de trabajos realizados:</h2>
+            <p>Aqui unas muestra de mi arte una mescla de tradicional-Digital:</p>
         </section>
-        <br> 
 
-        <!-- Contenedor principal del slider -->
+                <img src="Y1.jpg" alt="Imagen 1">
+                <img src="Y2.jpg" alt="Imagen 2">
+                <img src="Y3.jpg" alt="Imagen 3">
+
+ <section>
+            <h2>Animaciones 2D</h2>
+            <p>Practicas de animacion 2D frame by frame hechas en Krita</p>
+        </section>
+
+         </section>
+
+           <!-- Contenedor principal del slider 2 -->
 <div class="slider-container">
         <div class="slider-content">
             <div class="slider-item">
-                <img src="Y1.jpg" alt="Imagen 1">
+                <img src="Yei.gif" alt="Imagen 1">
             </div>
             <div class="slider-item">
-                <img src="Y2.jpg" alt="Imagen 2">
+                <img src="ball.gif" alt="Imagen 2">
             </div>
             <div class="slider-item">
-                <img src="Y3.jpg" alt="Imagen 3">
+                <img src="Log.gif" alt="Imagen 3">
             </div>
-     <script>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <script>
         let slideIndex = 0;
         showSlides();
 
@@ -85,8 +101,14 @@
             }, 3000); // Cambia la imagen cada 3 segundos
         }
     </script>
-
     </main>
+
+        <section>
+            <h2>Animacion 3D:</h2>
+            <p>Una practica de animacioon en Blender un pato en Lowpoly con un efecto 2D.5</p>
+        </section>
+ <img src="Pato.gif">
+
     <!-- Pie de página del sitio -->
     <footer>
         <p>&copy; 2024 My first website</p>
